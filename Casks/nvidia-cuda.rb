@@ -22,6 +22,7 @@ cask 'nvidia-cuda' do
   installer script: {
                       executable: 'CUDAMacOSXInstaller.app/Contents/MacOS/CUDAMacOSXInstaller',
                       args:       ['--accept-eula', '--silent'],
+                      sudo:       true,
                     }
 
   uninstall script:    {
